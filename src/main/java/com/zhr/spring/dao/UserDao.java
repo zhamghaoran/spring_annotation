@@ -1,2 +1,4 @@
-package com.zhr.spring.dao;public interface UserDao {
+package com.zhr.spring.dao;
+
+public interface UserDao {
 }

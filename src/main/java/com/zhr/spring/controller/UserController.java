@@ -1,2 +1,7 @@
-package com.zhr.spring.controller;public class UserController {
+package com.zhr.spring.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class UserController {
 }

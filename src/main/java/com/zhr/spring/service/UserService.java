@@ -1,2 +1,4 @@
-package com.zhr.spring.service;public interface UserService {
+package com.zhr.spring.service;
+
+public interface UserService {
 }
