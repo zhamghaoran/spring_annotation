@@ -27,7 +27,12 @@ public class test {
      *      若byName和byType的方式都无法实现自动装配，即IOC容器中有多个类型匹配的bean，
      *      且这些bean的id和要赋值的属性名都不一致，此时此时抛异常
      *      此时我们可以在要赋值的属性上添加一个注解@Qualifier("")
-     *      通过该注解的val属性值来指定某个bean的id值，将这个bean为属性赋值  */
+     *      通过该注解的val属性值来指定某个bean的id值，将这个bean为属性赋值
+     *      注意IOC容器中没有一个匹配的bean的时候，此时抛出异常，NoSuchBeanDefinitionException
+     *      在@Autowired注解中有个属性required，默认值为true，必须完成自动装配，
+     *      可以将其设置成false，此时能装配就装配，无法装配就使用默认值
+     *      */
+
     @Test
     public void  test() {
         ApplicationContext ioc = new ClassPathXmlApplicationContext("spring-ioc-annotation.xml");
